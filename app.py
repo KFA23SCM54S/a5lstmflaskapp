@@ -125,7 +125,7 @@ def LSTMIssuesCreatedWeek(reponum):
 
     return plt, 200
 
-@app.route('/fetch/lstm/createdweek/reponum=<int:reponum>')
+@app.route('/fetch/lstm/11.1/reponum=<int:reponum>')
 def fetch_lstm_createdweek(reponum):
     # Specify the path to your image file
     image_path = f'lstm_images/11.1-{reponum}.png'
@@ -133,7 +133,7 @@ def fetch_lstm_createdweek(reponum):
     # Return the image as a response
     return send_file(image_path, mimetype='image/png')
 
-@app.route('/fetch/lstm/createdweek/modelloss/reponum=<int:reponum>')
+@app.route('/fetch/lstm/11.1/modelloss/reponum=<int:reponum>')
 def fetch_lstm_createdweek_modelloss(reponum):
     # Specify the path to your image file
     image_path = f'lstm_images/11.1modelloss-{reponum}.png'
